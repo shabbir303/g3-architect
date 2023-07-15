@@ -59,6 +59,63 @@ nav h3{
 .banner img{
     width:100%;
 }
+main{
+    max-width:1440px;
+}
+/* features section */
+
+.features{
+    margin:101px 301px 100px 301px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    gap:60px;
+}
+.features>.features-images{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.features .features-images img{
+    width:300px;
+    height:300px;
+    padding:10px;
+}
+.features .features-description h2{
+     font-size:2.5rem;
+     padding-bottom:15px;
+     width:400px;
+}
+.features .features-description{
+    padding-bottom:10px;
+    /* width:400px; */
+    /* border: 1px solid red; */
+    /* padding-left:400px; */
+    text-align:center;
+}
+.features .features-description h2 .quick{
+    color:#727272;
+    font-weight:500;
+}
+.features .features-description h2 .our{
+    color:#131313
+}
+.features .features-description h2 .new{
+    color:#FF900E;
+}
+.features .features-description p{
+    font-size: 15px;
+    font-weight:500;
+    line-height: 25px;
+    padding-bottom:20px;
+}
+.features .features-description button{
+    color:white;
+    background-color: #FF900E;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+}
+
 /* responsive  */
 /* Mobile devices */
 @media screen and (max-width:576px) {
@@ -68,7 +125,16 @@ nav h3{
     nav{
         flex-direction:column;
         row-gap: 20px;
+     }
+     .features{
+        flex-direction: column-reverse;
+        margin:15px;
+        padding-top:15px;
+     }
+     .features>.features-images{
+        grid-template-columns: repeat(1,1fr);
      } 
+    
     /* .banner{
         text-align:center;
     }
@@ -85,4 +151,16 @@ nav h3{
         flex-direction:column;
         row-gap: 20px;
      } 
+     .features{
+        flex-direction: column-reverse;
+        margin:15px;
+        padding-top:15px;
+     }
+     .features>.features-images{
+        grid-template-columns: repeat(2,1fr);
+     } 
+     .features .features-description h2{
+        /* border:1px solid gray; */
+        margin-left:160px
+     }
 }
