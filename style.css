@@ -65,7 +65,7 @@ main{
 /* features section */
 
 .features{
-    margin:101px 301px 100px 301px;
+    margin:101px 301px 100px 900px;
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -115,7 +115,35 @@ main{
     border:none;
     border-radius:8px;
 }
-
+.love{
+    display:flex;
+    margin:169px 240px;
+    justify-content:space-between;
+    align-items:center;
+    /* border:1px solid red; */
+    width:100%;
+    gap:100px;
+}
+.facts-description{
+    margin:130px 240px;
+}
+.facts-description h3{
+    font-size:2rem;
+    padding-bottom:10px;
+}
+.facts .facts-logo{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    padding:50px 240px;
+    width:100%;
+}
+.facts .facts-logo .card{
+    border:1px solid #FF900E;
+    border-radius:8px;
+    text-align:center;
+    padding:15px;
+}
 /* responsive  */
 /* Mobile devices */
 @media screen and (max-width:576px) {
